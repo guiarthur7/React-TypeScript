@@ -77,7 +77,7 @@ export function trierPar<T>(liste: T[], cle: keyof T): T[] {
 // --- 5. Un paramètre optionnel jamais vérifié -------------------------
 // Appelée sans genre, cette fonction filtre sur `undefined`.
 
-export function filtrerParGenre(liste: Film[], genre?: string): Film[] {
+export function filtrerParGenre(liste: Film[], genre?: genres): Film[] {
   if (!genre) return liste;
   return liste.filter((film) => film.genres.includes(genre));
 }
