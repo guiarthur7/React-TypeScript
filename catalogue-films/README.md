@@ -9,7 +9,8 @@ Assurez-vous d'avoir Node.js installé sur votre machine, puis ouvrez un termina
 
 ```bash
 npm install
-2. Démarrer le serveur de développement
+
+### 2. Démarrer le serveur de développement
 Pour lancer le projet et voir les modifications en direct :
 
 Bash
