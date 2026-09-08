@@ -9,15 +9,17 @@ Assurez-vous d'avoir Node.js installé sur votre machine, puis ouvrez un termina
 
 ```bash
 npm install
+```
 
 ### 2. Démarrer le serveur de développement
 Pour lancer le projet et voir les modifications en direct :
 
-Bash
+```bash
 npm run dev
+```
 Ouvrez ensuite le lien affiché dans le terminal (généralement http://localhost:5173) avec votre navigateur.
 
-🧩 Composants du Design System
+### 3. Composants du Design System
 Le projet repose sur 4 composants principaux rangés dans src/composants/ :
 
 Bouton : Un bouton d'action avec 3 variantes (primaire, secondaire, danger) gérées par un Record.
@@ -28,7 +30,7 @@ Carte : Un conteneur flexible qui accepte du contenu libre via sa prop children.
 
 ListeFilms : Le composant chef d'orchestre qui assemble les éléments précédents dans une grille responsive.
 
-🛠️ Technologies utilisées
+### 4. Technologies utilisées
 React (via Vite)
 
 TypeScript (Typage strict, zéro any)
