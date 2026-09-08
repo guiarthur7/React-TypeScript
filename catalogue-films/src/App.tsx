@@ -17,10 +17,10 @@ function App() {
 
         <header>
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
-            Vidéothèque TP2
+            TP2 module React/TS
           </h1>
           <p className="mt-2 text-lg text-gray-600">
-            Design system typé avec React et Tailwind CSS.
+            Design React et Typescript fait par Arthur Guillaume et Ethan Bacquier.
           </p>
         </header>
 
