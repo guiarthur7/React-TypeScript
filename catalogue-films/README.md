@@ -1,4 +1,4 @@
-# TP2 — Vidéothèque & Design System Typé
+# TP2 — Vidéothèque
 
 Ce projet est une application React statique développée avec TypeScript et mise en forme avec Tailwind CSS. Il met en place un mini "design system" avec des composants réutilisables, robustes et strictement typés.
 
