@@ -16,7 +16,7 @@
 type genres = "SF" | "Horreur" | "Thriller" | "Drame" | "Aventure"
 type statuts = "vu" | "a_voir" | "abandonne"
 
-interface Film {
+export interface Film {
   id: number;
   titre: string;
   annee: number;
@@ -86,11 +86,11 @@ export function filtrerParGenre(liste: Film[], genre?: genres): Film[] {
 // `statut` est une chaîne quelconque : rien n'empêche d'écrire "Vu",
 // "vue" ou "à voir". Une faute de frappe passe inaperçue.
 
-export function estVu(film: {statut: string}): boolean {
+export function estVu(film: { statut: string }): boolean {
   return film.statut === "vu";
 }
 
-export function libelleStatut(film : {statut: string}): string {
+export function libelleStatut(film: { statut: string }): string {
   if (film.statut === "vu") return "Déjà vu";
   if (film.statut === "a_voir") return "À voir";
   if (film.statut === "abandonne") return "Abandonné";
@@ -100,7 +100,7 @@ export function libelleStatut(film : {statut: string}): string {
 // --- 7. Une valeur venue de l'extérieur --------------------------------
 // localStorage.getItem renvoie null quand la clé n'existe pas.
 
-export function chargerFavoris(): number | string{
+export function chargerFavoris(): number | string {
   const brut = localStorage.getItem("favoris");
   if (brut == null) {
     return 0;
@@ -108,7 +108,7 @@ export function chargerFavoris(): number | string{
   return JSON.parse(brut);
 }
 
-export function enregistrerFavoris(favoris : Film): void {
+export function enregistrerFavoris(favoris: Film): void {
   localStorage.setItem("favoris", JSON.stringify(favoris));
 }
 
@@ -116,7 +116,7 @@ export function enregistrerFavoris(favoris : Film): void {
 // On veut pouvoir modifier un ou plusieurs champs d'un film, sans avoir
 // à tous les repasser. Quel type décrit « quelques champs de Film » ?
 
-export function mettreAJour(film: Film[], modifications: Film) : Film {
+export function mettreAJour(film: Film[], modifications: Film): Film {
   return { ...film, ...modifications };
 }
 
