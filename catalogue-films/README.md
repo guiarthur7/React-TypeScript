@@ -1,36 +1,41 @@
-# TP2 — Vidéothèque
+# TP — Vidéothèque
 
 Ce projet est une application React statique développée avec TypeScript et mise en forme avec Tailwind CSS. Il met en place un mini "design system" avec des composants réutilisables, robustes et strictement typés.
 
-## 🚀 Démarrage rapide
+# 🎬 Catalogue Films (React + TypeScript)
 
-### 1. Installer les dépendances
-Assurez-vous d'avoir Node.js installé sur votre machine, puis ouvrez un terminal à la racine du projet et lancez :
+Projet réalisé par **Arthur Guillaume** et **Ethan Bacquier**.
 
-```bash
-npm install
-```
+## 🚀 Lancer le projet
 
-### 2. Démarrer le serveur de développement
-Pour lancer le projet et voir les modifications en direct :
+1. **Installer les dépendances**
 
-```bash
-npm run dev
-```
-Ouvrez ensuite le lien affiché dans le terminal (généralement http://localhost:5173) avec votre navigateur.
+   ```bash
+   npm install
+   ```
 
-### 3. Composants du Design System
-Le projet repose sur 4 composants principaux rangés dans src/composants/ :
+2. **Configurer la clé d'API OMDB**
+   Créer un fichier `.env.local` à la racine du projet avec votre clé :
 
-Bouton : Un bouton d'action avec 3 variantes (primaire, secondaire, danger) gérées par un Record.
+   ```env
+   VITE_OMDB_KEY=votre_cle_ici
+   ```
 
-Badge : Une pastille de statut avec différents tons de couleur.
+3. **Démarrer le projet**
 
-Carte : Un conteneur flexible qui accepte du contenu libre via sa prop children.
+   ```bash
+   npm run dev
+   ```
 
-ListeFilms : Le composant chef d'orchestre qui assemble les éléments précédents dans une grille responsive.
+   L'application est accessible sur `http://localhost:5173`.
+
+4. **Vérification TypeScript (optionnel)**
+   ```bash
+   npx tsc --noEmit
+   ```
 
 ### 4. Technologies utilisées
+
 React (via Vite)
 
 TypeScript (Typage strict, zéro any)
