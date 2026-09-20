@@ -106,8 +106,8 @@ export function FormulaireInscription({ onInscription }: FormulaireInscriptionPr
       <div className="mt-2">
         <Bouton
           type="submit"
-          libelle={envoiEnCour ? "Envoi en cours…" : "S'inscrire"}
-          desactive={envoiEnCour}
+          libelle={envoiEnCours ? "Envoi en cours…" : "S'inscrire"}
+          desactive={envoiEnCours}
         />
       </div>
     </form>
