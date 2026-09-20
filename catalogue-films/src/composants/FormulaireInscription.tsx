@@ -1,6 +1,6 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
 import { type Inscription, type Erreurs, valeursInitiales, valider } from "../lib/inscription";
-import { ChampTexte } from "./ChampTexte";
+import { ChampTexte } from "./champTexte";
 import { Bouton } from "./Bouton";
 
 export interface FormulaireInscriptionProps {
@@ -106,8 +106,8 @@ export function FormulaireInscription({ onInscription }: FormulaireInscriptionPr
       <div className="mt-2">
         <Bouton
           type="submit"
-          libelle={envoiEnCours ? "Envoi en cours…" : "S'inscrire"}
-          desactive={envoiEnCours}
+          libelle={envoiEnCour ? "Envoi en cours…" : "S'inscrire"}
+          desactive={envoiEnCour}
         />
       </div>
     </form>
